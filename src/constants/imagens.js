@@ -1,0 +1,1 @@
+export const logo = 'https://www.pngfind.com/pngs/m/96-967419_png-file-svg-e-commerce-icon-png-free.png'
