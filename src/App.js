@@ -1,16 +1,17 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./Approutes";
 import CommerceContextProvider from "./Components/Context/commerceContext";
-import Navbar from "./Components/Navbar";
-import Produtos from "./Components/Produtos";
 
 const App = () => {
   return (
-    <div>
+    <BrowserRouter>
+        <div>
       <CommerceContextProvider>
-        <Navbar />
-        <Produtos />
+          <AppRoutes />
       </CommerceContextProvider>
-    </div>
+        </div>
+    </BrowserRouter>
   );
 };
 

@@ -6,6 +6,7 @@ export const useStyles = makeStyles((theme) => ({
   appBar: {
     boxShadow: "none",
     borderBottom: "1px solid rgba(0, 0, 0, 0.12)",
+    textDecoration: "none",
     [theme.breakpoints.up("sm")]: {
       width: `calc(100% - ${drawerWidth}px)`,
       marginLeft: drawerWidth,
@@ -13,12 +14,12 @@ export const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
-    alignItems: 'center',
-    display: 'flex',
-    textDecoration: 'none',
+    alignItems: "center",
+    display: "flex",
+    textDecoration: "none",
   },
   image: {
-    marginRight: '10px',
+    marginRight: "10px",
   },
   grow: {
     flexGrow: 1,

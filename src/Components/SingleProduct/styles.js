@@ -10,7 +10,8 @@ export const useStyles = makeStyles(() => ({
     },
     cardContent: {
         display: 'flex',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        textOverflow: 'ellipsis'
     },
     cardActions: {
         display: 'flex',
