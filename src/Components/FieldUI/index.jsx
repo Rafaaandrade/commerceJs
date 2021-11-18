@@ -8,8 +8,9 @@ const FieldUI = ({ name, label, required }) => {
     <Grid item xs={12} sm={6}>
       <Controller
         control={control}
+        name={name} 
         render={({ field }) => (
-          <TextField name={name} label={label} required={required} {...field} />
+          <TextField label={label} required={required} {...field} />
         )}
       />
     </Grid>

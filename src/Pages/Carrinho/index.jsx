@@ -18,7 +18,7 @@ const CarrinhoCompras = () => {
   }, []);
 
   return (
-    <>
+    <div>
       <Navbar quantidade={carrinho.total_items} />
       <Carrinho
         carrinho={carrinho}
@@ -26,7 +26,7 @@ const CarrinhoCompras = () => {
         removerCarrinho={removerCarrinho}
         limparCarrinho={limparCarrinho}
       />
-    </>
+    </div>
   );
 };
 

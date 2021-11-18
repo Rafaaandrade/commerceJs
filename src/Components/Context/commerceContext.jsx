@@ -36,22 +36,6 @@ export default function CommerceContextProvider({ children }) {
     setCarrinho(cart);
   };
 
-  // const generateToken = async (id) => {
-  //   try{
-  //     const token = await commerce.checkout.generateToken(id, {type: 'cart'});
-  //     console.log(token);
-  //   }catch(error){
-  //     console.log(error)
-  //   }
-  // }
-  //EnderecoForm
-
-  const fetchFreteCidades = async (checkoutToken) => {
-    const { data } = await commerce.services.localeListShippingCountries(
-      checkoutToken
-    );
-  };
-
   return (
     <CommerceContext.Provider
       value={{
@@ -63,7 +47,6 @@ export default function CommerceContextProvider({ children }) {
         handleQuantityChange,
         removerCarrinho,
         limparCarrinho,
-        fetchFreteCidades,
       }}
     >
       {children}
@@ -81,7 +64,6 @@ export function useCommerceContext() {
     handleQuantityChange,
     removerCarrinho,
     limparCarrinho,
-    fetchFreteCidades,
   } = useContext(CommerceContext);
   return {
     fetchProdutos,
@@ -92,6 +74,5 @@ export function useCommerceContext() {
     handleQuantityChange,
     removerCarrinho,
     limparCarrinho,
-    fetchFreteCidades,
   };
 }

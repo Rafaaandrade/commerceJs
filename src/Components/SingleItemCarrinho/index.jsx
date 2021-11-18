@@ -46,7 +46,7 @@ const SingleItemCarrinho = ({
             +
           </Button>
         </div>
-        <Button variant="contained" type="button" color="secondary">
+        <Button variant="contained" type="button" color="secondary" onClick={() => removerCarrinho(item.id)}>
           Remover
         </Button>
       </CardActions>

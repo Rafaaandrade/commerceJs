@@ -20,7 +20,7 @@ const Carrinho = ({
   );
 
   const CarrinhoCheio = () => (
-    <>
+    <div>
       <Grid container spacing={3}>
         {carrinho.line_items.map((c) => (
           <Grid item xs={12} sm={4} key={c.id}>
@@ -53,14 +53,14 @@ const Carrinho = ({
             type="button"
             variant="contained"
             color="primary"
-            to='/checkout'
+            to="/checkout"
             component={Link}
           >
             Finalizar
           </Button>
         </div>
       </div>
-    </>
+    </div>
   );
 
   if (!carrinho.line_items) return "Carregando...";

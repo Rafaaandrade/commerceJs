@@ -15,7 +15,7 @@ const Navbar = ({ quantidade }) => {
   const styles = useStyles();
   const location = useLocation();
   return (
-    <>
+    <div>
       <AppBar position="fixed" className={styles.appBar} color="inherit">
         <Toolbar>
           <Typography
@@ -50,7 +50,7 @@ const Navbar = ({ quantidade }) => {
           )}
         </Toolbar>
       </AppBar>
-    </>
+    </div>
   );
 };
 

@@ -30,6 +30,17 @@ export const useStyles = makeStyles((theme) => ({
   stepper: {
     padding: theme.spacing(3, 0, 5),
   },
+  buttonContainer: {
+    display: "flex",
+    justifyContent: "space-between",
+    margin: '2%'
+  },
+  listItem: {
+    padding: '10px 0',
+  },
+  total: {
+    fontWeight: '700',
+  }
 }));
 
 export default useStyles;
